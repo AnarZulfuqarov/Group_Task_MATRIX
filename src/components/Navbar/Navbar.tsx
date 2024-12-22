@@ -7,10 +7,10 @@ const Navbar = () => {
   return (
     <div>
       <div className="navbar-up">
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar first navbar-expand-lg">
           <div className="container-fluid my-2 ms-5">
             <a className="navbar-brand col-lg-3 head" href="#">
-              <p className="my-1 mt-2">
+              <p className="my-1 mt-2 para">
                 <PiFilmSlate className="icon mb-1" /> 
                 <span> UFA</span> cinema
               </p>

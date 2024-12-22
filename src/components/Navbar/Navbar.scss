@@ -1,11 +1,12 @@
-.navbar {
+.first {
   background-color: #1b1717;
+
 
   .head {
     .icon {
       font-size: 40px;
     }
-    p {
+    .para{
       color: #ce1212;
 
       span {
@@ -29,6 +30,8 @@
   }
   .nav-link:hover {
     color: #ce1212 !important;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
   }
 
   .reserve {

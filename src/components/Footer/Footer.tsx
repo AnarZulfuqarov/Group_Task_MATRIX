@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/f
 import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <div className="footer pt-4 pb-5">
+    <div className="footer pt-4 pb-1">
       <div className="container">
         <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
           <div className="col mb-3">

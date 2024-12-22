@@ -1,3 +1,54 @@
-body{
-    background-color: #f0f0f0;
+.home {
+  background-color: #eeebdd;
+  .carousel-item {
+    img {
+      height: 60%;
+      object-fit: cover;
+    }
+    .background {
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.6;
+      position: absolute;
+      top: 0px;
+    }
+  }
+
+  .service {
+    h2 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+  .feature {
+    height: 200px;
+    cursor: pointer;
+  }
+  .feature:hover {
+    transform: scale(1.05);
+    background-color: #1b1717;
+    padding: 15px;
+    border: 2px solid #ce1212;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    h3 {
+      color: white !important;
+    }
+  }
+
+  h2 {
+    background-color: #1b1717;
+    padding: 30px;
+    color: white !important;
+  }
+
+  .feature-icon {
+    background-color: #810000;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
 }
