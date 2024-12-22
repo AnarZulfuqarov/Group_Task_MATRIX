@@ -1,6 +1,7 @@
 import { PiFilmSlate } from "react-icons/pi";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import 'animate.css';
 
 const Navbar = () => {
   return (
@@ -52,8 +53,8 @@ const Navbar = () => {
                 </li>
               </ul>
               <div className="d-lg-flex col-lg-3 justify-content-lg-end ms-5">
-                <button className="reserve">
-                  <Link to={"/reservation"} className="link">
+                <button className="reserve animate__animated animate__tada animate__infinite animate__slower">
+                  <Link to={"/reservation"} className="link ">
                     Reserve Now!
                   </Link>
                 </button>
