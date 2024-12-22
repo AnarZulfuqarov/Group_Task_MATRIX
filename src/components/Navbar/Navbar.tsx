@@ -1,7 +1,7 @@
 import { PiFilmSlate } from "react-icons/pi";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
-import 'animate.css';
+import "animate.css"
 
 const Navbar = () => {
   return (
