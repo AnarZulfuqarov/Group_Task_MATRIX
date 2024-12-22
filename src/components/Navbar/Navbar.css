@@ -1,0 +1,40 @@
+.navbar {
+  background-color: #1b1717;
+}
+.navbar .head .icon {
+  font-size: 40px;
+}
+.navbar .head p {
+  color: #ce1212;
+}
+.navbar .head p span {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.navbar .navbar-toggler {
+  background-color: #ce1212 !important;
+}
+.navbar .nav-link {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+.navbar .nav-link:visited {
+  color: white !important;
+}
+.navbar .nav-link:hover {
+  color: #ce1212 !important;
+}
+.navbar .reserve {
+  background-color: #ce1212;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+}
+.navbar .reserve .link {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=Navbar.css.map */
