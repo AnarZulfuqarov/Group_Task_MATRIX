@@ -1,17 +1,19 @@
 .home {
-  background-color: #eeebdd;
-  .carousel-item {
-    img {
-      height: 60%;
-      object-fit: cover;
-    }
-    .background {
-      height: 100%;
-      width: 100%;
-      background-color: black;
-      opacity: 0.6;
-      position: absolute;
-      top: 0px;
+  overflow-x: hidden;
+  .carousel-inner {
+    .carousel-item {
+      img {
+        height: 60%;
+        object-fit: cover;
+      }
+      .background {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.73;
+        position: absolute;
+        top: 0px;
+      }
     }
   }
 
@@ -50,5 +52,27 @@
     color: white;
     padding: 10px;
     border-radius: 10px;
+  }
+  .carousel-caption {
+    .star {
+      color: #ffcc00;
+    }
+    h1 {
+      font-size: 50px;
+      span {
+        font-size: 30px;
+        color: #ce1212;
+      }
+    }
+    h3 {
+      color: white;
+      text-shadow: 2px 2px 8px #ff0000;
+      font-weight: bold;
+      span {
+        color: white;
+        text-shadow: none;
+        font-weight: 500;
+      }
+    }
   }
 }
