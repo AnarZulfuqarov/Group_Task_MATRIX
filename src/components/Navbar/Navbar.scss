@@ -1,3 +1,46 @@
-body{
-    background-color: #f0f0f0;
+.navbar {
+  background-color: #1b1717;
+
+  .head {
+    .icon {
+      font-size: 40px;
+    }
+    p {
+      color: #ce1212;
+
+      span {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+      }
+    }
+  }
+  .navbar-toggler {
+    background-color: #ce1212 !important;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+  .nav-link:visited {
+    color: white !important;
+  }
+  .nav-link:hover {
+    color: #ce1212 !important;
+  }
+
+  .reserve {
+    background-color: #ce1212;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    .link {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
