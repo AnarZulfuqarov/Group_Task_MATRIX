@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.not-found {
+  min-height: 100vh;
+  background-color: №EEEBDD;
+}
+.not-found .icon {
+  color: #810000;
+  font-size: 300px;
+  border: 3px solid #810000;
+  border-radius: 50%;
+  padding: 20px;
+}
+.not-found h1 {
+  font-size: 50px;
+}
+.not-found h3 {
+  font-size: 40px;
+}
+.not-found p {
+  font-size: 20px;
+}
+.not-found p span {
+  color: #810000;
+  font-weight: bold;
+}
+.not-found button {
+  background-color: #810000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+}
+.not-found button .link {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=NotFound.css.map */
