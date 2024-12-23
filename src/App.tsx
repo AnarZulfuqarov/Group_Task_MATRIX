@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 import Movies from "./pages/Movies/Movies";
 
 function App() {
+
   const location = useLocation();
   const isNotFoundPage = location.pathname !== "/" &&
     location.pathname !== "/about" &&
