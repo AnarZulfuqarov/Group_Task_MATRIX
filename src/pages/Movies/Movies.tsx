@@ -1,14 +1,10 @@
-import { useState } from "react";
+import React, { useContext } from "react";
 import { FaStar } from "react-icons/fa";
 import "./Movies.scss";
+import { MovieContext } from "../../context/CinemeContext";
 
-const Movies = () => {
-  const [movies, setMovies] = useState([
-    { id: 1, title: "Inception", desc: "A mind-bending thriller", price: 15, rating: 5 },
-    { id: 2, title: "Avatar", desc: "A visual masterpiece", price: 20, rating: 4 },
-    { id: 3, title: "The Dark Knight", desc: "A gripping action movie", price: 18, rating: 5 },
-    { id: 4, title: "Titanic", desc: "A timeless love story", price: 10, rating: 3 },
-  ]);
+const Movies: React.FC = () => {
+  const { movies, setMovies } = useContext(MovieContext);
 
   const sortMoviesAZ = () => {
     const sorted = [...movies].sort((a, b) => a.title.localeCompare(b.title));
@@ -85,11 +81,11 @@ const Movies = () => {
         {movies.map((movie) => (
           <div key={movie.id} className="col-sm-6 col-md-4 col-lg-3 p-0 movie_card">
             <div className="image">
-              <img src="https://via.placeholder.com/300" alt="movie" />
+              <img src={movie.img} alt="movie" />
             </div>
             <div className="title">
-              <h1>{movie.title}</h1>
-              <p>{movie.desc}</p>
+              <h1>{movie.title.slice(0,10)}...</h1>
+              <p>{movie.desc.slice(0,20)}...</p>
               <div className="raiting">
                 {Array.from({ length: movie.rating }).map((_, i) => (
                   <FaStar key={i} />
