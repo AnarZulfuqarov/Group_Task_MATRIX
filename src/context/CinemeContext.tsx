@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { createContext, useEffect, useState, ReactNode } from 'react';
 
-// Define the types for movies and seats
+
 interface Movie {
-  id: number; // Adjust based on your API response
-  title: string; // Example fields; replace with actual API response fields
+  id: number; 
+  title: string; 
  desc:string,
  price:number,
  rating:number,
@@ -12,12 +12,12 @@ interface Movie {
 }
 
 interface Seat {
-  id: number; // Adjust based on your API response
-  number: string; // Example fields; replace with actual API response fields
- desc:string,
+  id: number; 
+  number: number;
+ phone_number:number;
 }
 
-// Define the context type
+
 interface MovieContextType {
   movies: Movie[];
   setMovies: React.Dispatch<React.SetStateAction<Movie[]>>;
@@ -25,10 +25,10 @@ interface MovieContextType {
   setSeats: React.Dispatch<React.SetStateAction<Seat[]>>;
 }
 
-// Create the context with a default value
+
 const MovieContext = createContext<MovieContextType | undefined>(undefined);
 
-// Define the props for the provider component
+
 interface CinemaContextProps {
   children: ReactNode;
 }
@@ -80,7 +80,7 @@ const CinemeContext: React.FC<CinemaContextProps> = ({ children }) => {
     fetchSeats();
   }, []);
 
-
+console.log(seats[0]);
   return (
     <MovieContext.Provider value={{ movies, setMovies, seats, setSeats }}>
       {children}
