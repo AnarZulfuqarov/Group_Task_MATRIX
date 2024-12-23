@@ -64,7 +64,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="carousel-item active">
+            <div className="carousel-item">
               <div className="background"></div>
               <img
                 src="https://c4.wallpaperflare.com/wallpaper/631/218/373/4k-interstellar-matthew-mcconaughey-astronaut-wallpaper-preview.jpg"
@@ -106,7 +106,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="carousel-item active">
+            <div className="carousel-item">
               <div className="background"></div>
               <img
                 src="https://assets-prd.ignimgs.com/2022/06/30/matrix-revolutionsdone-1656609097310.png"
