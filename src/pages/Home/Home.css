@@ -1,3 +1,68 @@
-body {
-  background-color: #f0f0f0;
+.home {
+  overflow-x: hidden;
+}
+.home .carousel-inner .carousel-item img {
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .carousel-inner .carousel-item .background {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.73;
+  position: absolute;
+  top: 0px;
+}
+.home .service h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.home .feature {
+  height: 200px;
+  cursor: pointer;
+}
+.home .feature:hover {
+  transform: scale(1.05);
+  background-color: #1b1717;
+  padding: 15px;
+  border: 2px solid #ce1212;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+}
+.home .feature:hover h3 {
+  color: white !important;
+}
+.home h2 {
+  background-color: #1b1717;
+  padding: 30px;
+  color: white !important;
+}
+.home .feature-icon {
+  background-color: #810000;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.home .carousel-caption .star {
+  color: #ffcc00;
+}
+.home .carousel-caption h1 {
+  font-size: 50px;
+}
+.home .carousel-caption h1 span {
+  font-size: 30px;
+  color: #ce1212;
+}
+.home .carousel-caption h3 {
+  color: white;
+  text-shadow: 2px 2px 8px #ff0000;
+  font-weight: bold;
+}
+.home .carousel-caption h3 span {
+  color: white;
+  text-shadow: none;
+  font-weight: 500;
 }/*# sourceMappingURL=Home.css.map */

@@ -1,3 +1,36 @@
-body {
-  background-color: #f0f0f0;
+.footer {
+  background-color: #1b1717;
+  color: white !important;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+p {
+  color: #ce1212;
+}
+p span {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.social-media .social {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.social-media .social:hover {
+  color: #ce1212;
+}
+
+.nav-item a {
+  color: rgb(108, 105, 105) !important;
+  text-decoration: none;
 }/*# sourceMappingURL=Footer.css.map */

@@ -1,3 +1,167 @@
-body {
-  background-color: #f0f0f0;
+.movies {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.movie_card {
+  width: 300px !important;
+  margin: 10px;
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.movie_card .title {
+  padding: 10px;
+}
+.movie_card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: auto;
+     object-fit: auto;
+}
+.movie_card h1 {
+  font-size: 35px;
+}
+.movie_card p {
+  font-size: 20px;
+  margin: 0;
+}
+.movie_card .raiting {
+  font-size: 25px;
+  color: #ffcc00;
+  margin: 10px 0;
+}
+.movie_card span {
+  font-size: 20px;
+}
+.movie_card button {
+  margin: 10px 0;
+}
+
+.listBtnDropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  color: white;
+  max-height: 34px;
+}
+
+.btnDropdown {
+  flex: 1 1 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1px;
+  cursor: pointer;
+}
+
+.btnNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  height: 40px;
+  width: 100%;
+  padding: 0 22px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background: #141416;
+  color: white;
+  border: 1px solid #282828;
+  transition: 140ms ease-in-out;
+}
+
+.btnNav .chevron {
+  font-size: 14px;
+  opacity: 0.35;
+  transition: all 340ms;
+}
+
+.dropdown {
+  display: grid;
+  width: calc(100% - 8px);
+  grid-template-rows: 0fr;
+  margin-bottom: 8px;
+  background: #141416;
+  border: 1px solid #282828;
+  border-radius: 16px;
+  opacity: 0;
+  transition: all 340ms;
+  overflow: hidden;
+  color: white;
+}
+
+.dropdown > .dropdown-content {
+  overflow: hidden;
+  opacity: 0;
+  transition: all 340ms;
+}
+
+.btnDropdown._first .btnNav {
+  border-radius: 24px 0 0 24px;
+}
+
+.btnDropdown._last .btnNav {
+  border-radius: 0 24px 24px 0;
+}
+
+.btnDropdown:hover .dropdown {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.btnDropdown:hover .btnNav {
+  transition: 140ms ease-in-out;
+  background: #404041;
+  color: white;
+}
+
+.btnDropdown:hover .chevron {
+  transform: rotate(180deg);
+  transition: all 340ms;
+  opacity: 1;
+}
+
+.btnDropdown:hover .dropdown .dropdown-content {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.dropdown-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown-content li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  font-size: 14px;
+  color: white;
+  border-bottom: 1px solid #282828;
+  transition: 140ms ease-in-out;
+}
+
+.dropdown-content li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content li:hover {
+  transition: 140ms ease-in-out;
+  background: #404041;
+  color: white;
+}
+
+.dropdown-content li i {
+  font-size: 12px;
 }/*# sourceMappingURL=Movies.css.map */
