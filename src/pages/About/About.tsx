@@ -22,10 +22,10 @@ const About = () => {
         <br />
         <br />
         Diverse Selection: From drama to action, comedy to romance, and
-        everything in between, we’ve got it all! Convenience: Browse, select,
-        and rent your favorite movies in just a few clicks. Accessibility: Enjoy
+        everything in between, we’ve got it all! <br /> Convenience: Browse, select,
+        and rent your favorite movies in just a few clicks. <br /> Accessibility: Enjoy
         seamless access to our platform from any device – be it your phone,
-        tablet, or computer. High Quality: Experience movies in top-notch
+        tablet, or computer. <br /> High Quality: Experience movies in top-notch
         quality for the ultimate viewing experience. At UFA Cinema, we believe
         in creating moments of joy and entertainment for our customers. Our
         mission is to make movie rentals easy, enjoyable, and affordable for
