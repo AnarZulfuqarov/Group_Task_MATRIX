@@ -13,7 +13,7 @@ interface Movie {
 
 interface Seat {
   id: number; 
-  number: number;
+  isReserved: boolean;
  phone_number:number;
 }
 
