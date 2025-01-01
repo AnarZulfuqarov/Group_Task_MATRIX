@@ -1,3 +1,37 @@
 body{
     background-color: #f0f0f0;
 }
+.contact-page{
+    background-image: url('https://filmhafizasi.com/wp-content/uploads/eski-yazilar/gegen3.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 70vh;
+}
+.contact-us{
+
+
+
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+h1{
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+
+}
+}
+.input,.submit{
+    width: 100%;
+    min-width: 5rem;
+    border-radius: 10px;
+    padding: 5px 10px;
+    outline: none;
+    margin: 5px;
+    
+   
+    border: none;
+    resize: none;
+    
+}
