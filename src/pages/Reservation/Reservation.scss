@@ -25,6 +25,16 @@
                 background-color: #1b6900;
             }
         }
+        .seat.reserved {
+          background-color: red;
+          color: white;
+        }
+        
+        .seat.available {
+          background-color: green;
+          color: white;
+        }
+        
     }
     .modal {
         position: fixed;
