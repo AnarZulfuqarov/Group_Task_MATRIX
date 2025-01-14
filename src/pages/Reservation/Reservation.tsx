@@ -4,7 +4,7 @@ import "./Reservation.scss";
 import { MovieContext } from "../../context/CinemeContext";
 
 const Reservation = () => {
-  const { seats, reserveSeat } = useContext(MovieContext)!; // Use the reserveSeat function from the context
+  const { seats, reserveSeat } = useContext(MovieContext)!;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedSeatId, setSelectedSeatId] = useState<number | null>(null);
   const [name, setName] = useState("");
@@ -29,21 +29,20 @@ const Reservation = () => {
     if (!selectedSeatId) return;
 
     if (!name || !validateName(name)) {
-      return; // No toast, just skip the invalid input
+      return; 
     }
 
     if (!phoneNumber || !validatePhoneNumber(phoneNumber)) {
-      return; // No toast, just skip the invalid phone number
+      alert("Nomre yalnis daxil edilib")
+      return; 
     }
 
-    // Call reserveSeat from context to reserve the seat
     await reserveSeat(selectedSeatId, phoneNumber);
     closeModal();
   };
 
   const handleCancelReservation = async () => {
     if (selectedSeatId !== null) {
-      // Call reserveSeat with null to cancel the reservation
       await reserveSeat(selectedSeatId, null);
       closeModal();
     }
@@ -57,7 +56,7 @@ const Reservation = () => {
   };
 
   return (
-    <div className="reservation-container pt-5 pb-5">
+    <div className="reservation-container">
       <div className="seats">
         {seats.map((seat) => (
           <div

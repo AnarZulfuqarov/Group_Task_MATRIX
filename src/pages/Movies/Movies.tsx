@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import { FaStar } from "react-icons/fa";
 import "./Movies.scss";
 import { MovieContext } from "../../context/CinemeContext";
+import { useNavigate } from "react-router-dom";
 
 const Movies: React.FC = () => {
   const { movies, setMovies } = useContext(MovieContext);
-
+const navigate = useNavigate()
   const sortMoviesAZ = () => {
     const sorted = [...movies].sort((a, b) => a.title.localeCompare(b.title));
     setMovies(sorted);
@@ -78,7 +79,7 @@ const Movies: React.FC = () => {
       </div>
 
       <div className="row movies pb-5 pt-5">
-        {movies.map((movie) => (
+        {movies.map((movie:any) => (
           <div key={movie.id} className="col-sm-6 col-md-4 col-lg-3 p-0 movie_card">
             <div className="image">
               <img src={movie.img} alt="movie" />
@@ -93,7 +94,7 @@ const Movies: React.FC = () => {
               </div>
               <span>${movie.price}</span>
               <div className="text-center">
-                <button className="btn btn-danger">Book Now</button>
+                <button className="btn btn-danger" onClick={()=>navigate("/reservation")}>Book Now</button>
               </div>
             </div>
           </div>

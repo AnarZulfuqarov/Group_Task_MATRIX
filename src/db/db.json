@@ -7,8 +7,8 @@
     },
     {
       "id": "2",
-      "isReserved": true,
-      "phone_number": 994775840310
+      "isReserved": false,
+      "phone_number": null
     },
     {
       "id": "3",
@@ -17,8 +17,8 @@
     },
     {
       "id": "4",
-      "isReserved": false,
-      "phone_number": null
+      "isReserved": true,
+      "phone_number": 994775840310
     },
     {
       "id": "5",
@@ -117,7 +117,7 @@
     },
     {
       "id": "24",
-      "isReserved": true,
+      "isReserved": false,
       "phone_number": null
     }
   ]

@@ -33,7 +33,6 @@ interface CinemaContextProps {
 const CinemeContext: React.FC<CinemaContextProps> = ({ children }) => {
   const movieApiKey = import.meta.env.VITE_MOVIES_SUPABASE_KEY as string;
   const movieBaseUrl = import.meta.env.VITE_MOVIES_BASE_URL as string;
-  const seatsApiKey = import.meta.env.VITE_SEATS_SUPABASE_KEY as string;
   const seatsBaseUrl = import.meta.env.VITE_SEATS_BASE_URL as string;
 
   const [movies, setMovies] = useState<Movie[]>([]);
@@ -72,7 +71,6 @@ const CinemeContext: React.FC<CinemaContextProps> = ({ children }) => {
     fetchSeats();
   }, []);
 
-  // Function to reserve or cancel seat reservation
   const reserveSeat = async (seatId: number, phoneNumber: number | null) => {
     const isReserved = phoneNumber !== null;
 
