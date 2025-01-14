@@ -1,33 +1,30 @@
 import axios from 'axios';
 import { createContext, useEffect, useState, ReactNode } from 'react';
 
-
 interface Movie {
-  id: number; 
-  title: string; 
- desc:string,
- price:number,
- rating:number,
- img:string
+  id: number;
+  title: string;
+  desc: string;
+  price: number;
+  rating: number;
+  img: string;
 }
 
 interface Seat {
-  id: number; 
+  id: number;
   isReserved: boolean;
- phone_number:number;
+  phone_number: number | null;
 }
-
 
 interface MovieContextType {
   movies: Movie[];
   setMovies: React.Dispatch<React.SetStateAction<Movie[]>>;
   seats: Seat[];
   setSeats: React.Dispatch<React.SetStateAction<Seat[]>>;
+  reserveSeat: (seatId: number, phoneNumber: number | null) => Promise<void>;
 }
 
-
 const MovieContext = createContext<MovieContextType | undefined>(undefined);
-
 
 interface CinemaContextProps {
   children: ReactNode;
@@ -64,12 +61,7 @@ const CinemeContext: React.FC<CinemaContextProps> = ({ children }) => {
   useEffect(() => {
     const fetchSeats = () => {
       axios
-        .get(seatsBaseUrl, {
-          headers: {
-            apiKey: seatsApiKey,
-            Authorization: `Bearer ${seatsApiKey}`,
-          },
-        })
+        .get(seatsBaseUrl)
         .then((response) => {
           setSeats(response.data);
         })
@@ -80,13 +72,37 @@ const CinemeContext: React.FC<CinemaContextProps> = ({ children }) => {
     fetchSeats();
   }, []);
 
-console.log(seats[0]);
+  // Function to reserve or cancel seat reservation
+  const reserveSeat = async (seatId: number, phoneNumber: number | null) => {
+    const isReserved = phoneNumber !== null;
+
+    try {
+      const response = await axios.patch(
+        `${seatsBaseUrl}/${seatId}`,
+        {
+          isReserved,
+          phone_number: phoneNumber,
+        }
+      );
+
+      setSeats((prevSeats) =>
+        prevSeats.map((seat) =>
+          seat.id === seatId
+            ? { ...seat, isReserved, phone_number: phoneNumber }
+            : seat
+        )
+      );
+    } catch (error: any) {
+      console.error('Error updating seat:', error.response?.data || error.message);
+    }
+  };
+
   return (
-    <MovieContext.Provider value={{ movies, setMovies, seats, setSeats }}>
+    <MovieContext.Provider value={{ movies, setMovies, seats, setSeats, reserveSeat }}>
       {children}
     </MovieContext.Provider>
   );
 };
-export {MovieContext}
 
-export default  CinemeContext ;
+export { MovieContext };
+export default CinemeContext;

@@ -1,0 +1,124 @@
+{
+  "seats": [
+    {
+      "id": "1",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "2",
+      "isReserved": true,
+      "phone_number": 994775840310
+    },
+    {
+      "id": "3",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "4",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "5",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "6",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "7",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "8",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "9",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "10",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "11",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "12",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "13",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "14",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "15",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "16",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "17",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "18",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "19",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "20",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "21",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "22",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "23",
+      "isReserved": false,
+      "phone_number": null
+    },
+    {
+      "id": "24",
+      "isReserved": true,
+      "phone_number": null
+    }
+  ]
+}
